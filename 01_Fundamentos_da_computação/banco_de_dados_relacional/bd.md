@@ -1,15 +1,15 @@
 
 <h1 style="color: #E1BE5A;">BANCO DE DADOS<br> RELACIONAL</h1>
 
-#####Professores: Claudio Bonel e Azriel Majdenbaum.
+##### Professores: Claudio Bonel e Azriel Majdenbaum.
 
 
->"Relações são conjuntos onde os
->elementos **<i>são pares ordenados.</i>**
->**<i>Daniela Rodrigues</i>**
+> "Relações são conjuntos onde os
+> elementos **<i>são pares ordenados.</i>**
+> **<i>Daniela Rodrigues</i>**
 
 <br>
-##Ementa da disciplina
+## Ementa da disciplina
 
 - Visão geral da abordagem de banco de dados.
 
@@ -21,15 +21,15 @@
 
 ------------
 
-##Banco de dados
+## Banco de dados
 Um banco de dados relacional é um tipo de banco de dados que armazena e fornece acesso a pontos de dados relacionados entre si. Bancos de dados relacionais são baseados no modelo relacional, uma maneira intuitiva e direta de representar dados em tabelas. Em um banco de dados relacional, cada linha na tabela é um registro com uma ID exclusiva chamada chave. As colunas da tabela contêm atributos dos dados e cada registro geralmente tem um valor para cada atributo, facilitando o estabelecimento das relações entre os pontos de dados.
 
 
-####Sistema de Gerenciamento de Banco de dados (SGBD)
+#### Sistema de Gerenciamento de Banco de dados (SGBD)
 Data Base Management System ou Sistema de Gerenciamento de Banco de Dados (SGBD) é um conjunto de software utilizado para o gerenciamento de uma base de dados, responsáveis por controlar, acessar, organizar e proteger as informações de uma aplicação, tendo como principal objetivo gerenciar as bases de dados utilizadas por aplicações clientes e remover esta responsabilidade das mesmas.
 
 
-####Exemplos de SGBDs:
+#### Exemplos de SGBDs:
 -   Microsoft SQL Server
 -   Azure SQL DB
 -   Oracle
@@ -38,14 +38,14 @@ Data Base Management System ou Sistema de Gerenciamento de Banco de Dados (SGBD)
 -   SQLite
 -   IBM DB2
 
-####Metadados
+#### Metadados
 São informações descritivas de um banco de dados, normalmente, chamamos de "dados sobre dados". "Meta" vem do grego e significa "Além de".
 
 -   Em um banco de dados, tem por objetivo descrever os objetos
   
  ![Imagem sobre dados e metadados -](img/metadado.png)
 
-####Tipo de dados
+#### Tipo de dados
 
 -   INT
     -   Numeros inteiros
@@ -66,7 +66,7 @@ São informações descritivas de um banco de dados, normalmente, chamamos de "d
 
 Existem outros tipos de dados, além dos listados acima.
 
-####Modelo de dados
+#### Modelo de dados
 Modelagem de dados é o processo de criar uma representação visual, ou esquema, que define os sistemas de coleta e gerenciamento de informações de qualquer organização. Esse blueprint ou modelo de dados ajuda diferentes partes interessadas, como analistas de dados, cientistas e engenheiros, a criar uma visão unificada dos dados da organização. O modelo descreve quais dados a empresa coleta, a relação entre diferentes conjuntos de dados e os métodos que serão usados para armazenar e analisar esses dados.
 
 -   Cardinalidade:
@@ -79,11 +79,11 @@ Modelagem de dados é o processo de criar uma representação visual, ou esquema
 
  ![Exemplo Cardinalidade -](img/cardinalidade.png)
 
-####Constraints (restrições)
+#### Constraints (restrições)
  São usadas para garantir a exatidão e consistência dos dados do bd, possuem o objetivo de limitar os tipos de dados inseridos numa tabela.
  Constraints são aplicadas as colunas de uma tabela, podendo ser especificadas na criação da tabela ou posteriormente.
 
-#####Principais constraints
+##### Principais constraints
 -   NOT NULL
     -   Não aceita valores nulos na coluna
     -   obriga campos a possuirem um valor.
@@ -105,16 +105,16 @@ Modelagem de dados é o processo de criar uma representação visual, ou esquema
     -   pode inserir valores do sistema, usando funções como GETDATE()
 
 
-#####INDEX - <span style="color:red;">Não é considerado uma constraint</span>
+##### INDEX - <span style="color:red;">Não é considerado uma constraint</span>
   - pode ser aplicado a qualquer coluna da tabela
   - agiliza a recuperação de dados
   - pode ser aplicado em mais de uma coluna(não existe restrição quanto a quantidade)
   - qualquer coluna pode ser indexada, coluna chave ou não.
   - 
 
-##Manipulação básica de dados I
+## Manipulação básica de dados I
 
-#####Criar tabela <br>para criar uma tabela usamos o comando CREATE TABLE.
+##### Criar tabela <br>para criar uma tabela usamos o comando CREATE TABLE.
 
 ```SQL
 CREATE TABLE nome_da_tabela
@@ -152,7 +152,7 @@ Tipos de dados do exemplo anterior
     -   EX: "Sou uma frase e tenho 35 caracteres".
         -   espaço é considerado um caractere.
 
-#####Inserir dados<br> para inserir dados em tabelas usamos o comando INSERT INTO.
+##### Inserir dados<br> para inserir dados em tabelas usamos o comando INSERT INTO.
 
 ```SQL
 INSERT INTO nome_da_tabela [(colunas)]
@@ -174,7 +174,7 @@ VALUES ('IJM-1556', 2015, 72045, 'Volkswagem', 'Gol');
 -- Repare também na especificação das colunas no segundo caso.
 ```
 
-#####Consultar dados<br> para consultar dados em tabelas  usamos o comando SELECT.
+##### Consultar dados<br> para consultar dados em tabelas  usamos o comando SELECT.
 
 ```SQL
 SELECT coluna1, coluna2, ...
@@ -205,7 +205,7 @@ FROM VEICULOS
 WHERE ano < 2022;
 ```
 
-#####Atualizar/alterar dados<br> para atualizar / alterar / editar noSql usamos o comando UPDATE:
+##### Atualizar/alterar dados<br> para atualizar / alterar / editar noSql usamos o comando UPDATE:
 
 EX :
 Iremos zerar a km todos os veiculos com menos de 10km rodados.
@@ -251,7 +251,7 @@ SET KM = KM + 100
 WHERE ano BETWEEN 2015 AND 2021;
 ```
 
-#####Excluir dados <br> para excluir dados da tabela usamos o comando DELETE:
+##### Excluir dados <br> para excluir dados da tabela usamos o comando DELETE:
 
 ```SQL
 DELETE FROM nome_da_tabela
@@ -276,7 +276,7 @@ WHERE (marca ='Chevrolet') AND (km >50000);
 -- O uso do parentese não é obrigatório mas facilita a leitura do comando.
 ```
 
-#####Ordenar<br> para ordenar retorno dos registros da tabela usamos o comando ORDER BY:
+##### Ordenar<br> para ordenar retorno dos registros da tabela usamos o comando ORDER BY:
 
 ```SQL
 SELECT coluna1, coluna2, ...
@@ -312,7 +312,7 @@ FROM VEICULOS
 ORDER BY marca DESC, modelo ASC;
 ```
 
-#####Função de agregação <br> para retornar a quantidades de linhas de uma consulta usamos o comando COUNT:
+##### Função de agregação <br> para retornar a quantidades de linhas de uma consulta usamos o comando COUNT:
 ```SQL
 SELECT COUNT(*)
 FROM VEICULOS;
@@ -333,16 +333,16 @@ FROM VEICULOS
 WHERE marca = 'Ford';
 ```
 
-#####Evitar duplicatas<br> para sabermos por exemplo as marcas de veiculos registras na tabela sem repetir sua ocorrencia usamos DISTINCT:
+##### Evitar duplicatas<br> para sabermos por exemplo as marcas de veiculos registras na tabela sem repetir sua ocorrencia usamos DISTINCT:
 ```SQL
 SELECT DISTINCT marca
 FROM VEICULOS;
 -- irá retornar 1 ocorrência para cada marca cadastrada na tabela.
 ```
 
-##Manipulação básica de dados II
+## Manipulação básica de dados II
 
-#####Valores nulos
+##### Valores nulos
 Quando criamos uma tabela podemos definir para cada campo se ele é obrigatório ou não.
 Para indicar se um campo é obrigatório usamos NOT NULL e para indicar um campo de conteúdo opcional usamos NULL.
 Na linguagem SQL o padrão é NULL(campo opcional).
@@ -422,7 +422,7 @@ FROM PESSOAS
 WHERE enderecoIS NOT NULL;
 ```
 
-####Localizar textos<br>O operador LIKE é usado para localizar textos.<br> O símbolo '%' substitui zero ou mais caracteres.
+#### Localizar textos<br>O operador LIKE é usado para localizar textos.<br> O símbolo '%' substitui zero ou mais caracteres.
 
 EX:
 Pessoas com nomes iniciando com a letra 'A'
@@ -471,7 +471,7 @@ WHERE idade IN (25, 30, 40);
 -- Pessoas que tenham 25, 30 ou 40 anos de idade
 ```
 
-####Removendo ou adicionando colunas em tabelas<br> Para adicionar ou remover uma coluna de uma tabela precisamos alterar sua estrutura OU SEJA, alterar a tabela e não somente os dados contidos nela, e para isso, usamos o comando ALTER TABLE
+#### Removendo ou adicionando colunas em tabelas<br> Para adicionar ou remover uma coluna de uma tabela precisamos alterar sua estrutura OU SEJA, alterar a tabela e não somente os dados contidos nela, e para isso, usamos o comando ALTER TABLE
 
 EX:
 Para remover uma coluna da tabela usamos o comando ALTER TABLE com a cláusula DROP COLUMN
@@ -488,7 +488,7 @@ ALTER TABLE PESSOAS
 ADD sexo CHAR(1);
 ```
 
-####Manipulando datas.
+#### Manipulando datas.
 Ao criar uma tabela é uma pratica ruim criar a coluna idade pois a mesma necessita ser atualizada anualmente.
 Uma escolha melhor teria sido criar a coluna como data de nascimento.
 
@@ -525,7 +525,7 @@ ADD datanasc DATE NULL;
 ```
 
 
-####Inserindo dataas em campos DATE
+#### Inserindo dataas em campos DATE
 O formato padrão varia conforme a instalação do SGBD.
 SUpondo que o formado seja DD-MON-YYY, temos um dia com 2 dígitos, as 3 primeiras letras do mês e o ano com 4 digitos.
 
@@ -543,7 +543,7 @@ INSERT INTO PESSOAS(cpf, nome, datanasc, endereco)
 VALUES ('29048', 'Roberto', DATE'1980-02-03', 'Rua D, 80');
 ```
 
-####Funções de conversão de datas.
+#### Funções de conversão de datas.
 A função TO_CHAR() e TO_DATE() covertem uma data/horário em uma string e vice-versa.
 A sintaxe é:
 TO_CHAR(X [, formato]) e TO_DATE(x [, formato]).
@@ -568,7 +568,7 @@ TO_DATE('25-FEB-1979 21:36:28',
 );
 ```
 
-####Aritmética de datas
+#### Aritmética de datas
 Em SQL é possivel realizar as seguintes operações sobre datas:
 -   DATE + NUMBER = DATE
 -   DATE - NUMBER = DATE
@@ -581,9 +581,9 @@ FROM DUAL;
 ```
 
 
-##Manipulação Básica de Dados Parte III
+## Manipulação Básica de Dados Parte III
 
-####Restrição de integridade de <u>Entidade</u>
+#### Restrição de integridade de <u>Entidade</u>
 Para manter bancos de dados com qualidade, é necessário garantir a integridade dos dados armazenados.
 A **<u>integridade de enteidade</u>** define uma linha como entidade exclusiva de uma determianda tabela.
 
@@ -597,7 +597,7 @@ Após definir todas as chaves candidatas para uma tabela, escolhemos apenas uma 
 As outras, se tornam chaves alternativas (**<i>ALTERNATE KEYS - AKs</i>**).
 
 
-####Primary Key
+#### Primary Key
 Usamos **<i>PRIMARY KEY</i>** para chave principal  e **<i>UNIQUE</i>** para as demais AKs.<br> Naturalemnte toda PK também é NOT NULL.
 
 EX:
@@ -635,7 +635,7 @@ CONSTRAINT AK2_ALUNOS UNIQUE (email)
 
 A forma alternativa usa a palavra **CONSTRAINT**(restrição) e é preferivel por ser mais flexível.
 
-####Restrição de integridade de <u>Domínio</u>
+#### Restrição de integridade de <u>Domínio</u>
 Integridade de domínio visa garantir que os dados armazenados respeitem determinados valores permitidos.
 Podemos restringir o intervalo de dados permitido para um campo.
 Alguns exemplos são:
@@ -657,7 +657,7 @@ ADD CONSTRAINT CK_AnoIngr CHECK (anoIngresso > 2000);
 ALTER TABLE ALUNOS
 ADD CONSTRAINT CK_sexo CHECK (sexo IN ('M', 'F'));
 ```
-####Restrição de Integridade <u>Referencial</u>
+#### Restrição de Integridade <u>Referencial</u>
 
 Integridade referencial é usada entre duas tabelas para garantir que os dados de uma coluna da primeira tabela se referem aos dados registrados em uma coluna da segunda tabela.
 
@@ -701,7 +701,7 @@ ADD
 );
 ```
 
-####Relacionamento do tipo <u>muitos-para-muitos</u> N - N
+#### Relacionamento do tipo <u>muitos-para-muitos</u> N - N
 Dizemos que o relacionamento existente entre as tabelas ESTADOS e CIDADES é to tipo um-para -muitos( 1-N ).
 Em outras palavras significa que cada estado pode ter muitas cidades, mas que cada cidade pertence a um estado apenas.
 
@@ -712,9 +712,9 @@ Não é possível representar relacionamentos N-N usando apenas duas tabelas em 
 ![Tabela N para N -](img/tabelaNN.png)
 
 
-##Manipulação Básica de Dados Parte IV
+## Manipulação Básica de Dados Parte IV
 
-####JOIN
+#### JOIN
 Esta parte do material introduz o conceito de JUNÇÕES, que permitem a consulta de dados de mais de uma tabela, pela relação eNTRE **chaves estrangeiras** e **chaves primárias**.
 
 
@@ -734,13 +734,13 @@ FROM ESTADOS EST LEFT OUTER JOIN CIDADES CID
 ON EST.uf= CID.uf;
 ```
 
-#CROSS JOIN
+# CROSS JOIN
 O produto cartesiano é uma teoria de conjuntos.
 Executar um produto cartesiano entre duas tabelas resulta na combinação de todas as linhas(registros) da primeira tabela com as linhas da segunda.
 
 ![Cross Join -](img/cross_join.png)
 
-####OUTER JOIN
+#### OUTER JOIN
 Executar um produto cartesiano entre duas tabeleas resulta na combinação de todas as linhas da primeira tabela com as linhas da segunda.
 
 ![Outer Join -](img/outer_join.png)
@@ -763,7 +763,7 @@ FROM ESTADOS EST FULL OUTER JOIN CIDADES CID
 ON EST.uf= CID.uf;
 ```
 
-####JOINS ENCADEADOS
+#### JOINS ENCADEADOS
 Existem ocasiões onde é necessário obter dados de mais de duas tabelas. Em algumas situações os dados que necessitamos estão em tabelas mais "distantes" no banco de dados.
 Para resolver estas questões precisamos usar **JOINs encadeados**.
 
@@ -778,13 +778,13 @@ JOIN PRODUTOS PROD
 ON (AP.cod_produto = produto.cod_produto);
 ```
 
-##Manipulação Avançada de Dados
+## Manipulação Avançada de Dados
 No SQL podemos usar dois tipos de funções em linhas de uma tabela:
 
 -   funções <u>sobre linhas</u>. Operam individualmente sobre cada linha do resultado.
 -   funções <u>sobre conjunto de linas</u>. Operam sobre várias linhas, calculando valores sobre todo o conjunto( para determinar totais, médias, maior valor, entre outras).
 
-####Funções numéricas mais comuns:
+#### Funções numéricas mais comuns:
 -   ABS(n)
 -   ACOS(n)
 -   ASIN(n)
@@ -808,7 +808,7 @@ No SQL podemos usar dois tipos de funções em linhas de uma tabela:
 -   TANH(n)
 -   TRUNC(n, m)
 
-####Funções sobre caracteres mais comuns:
+#### Funções sobre caracteres mais comuns:
 -   LOWER(s)
 -   UPPER(s)
 -   INITCAP(s)
@@ -823,21 +823,21 @@ No SQL podemos usar dois tipos de funções em linhas de uma tabela:
 -   COUNDEX(s)
 -   TRANSLATE(s1,s2,s3)
 
-####Funções de agragação
+#### Funções de agragação
 É uma função que opera em um conjunto de linhas.
 Permitem calcular:
 
 -   **<i>Valores totais</i>** para toda uma tabela.
 -   **<i>subtotais</i>** para toda uma tabela, agrupando o resultado por determinado atributo e apresentando como uma nova coluna.
 
-#####Forma geral
+##### Forma geral
 ```SQL
 SELECT função_agregada
 FROM nome_da_tabela
 [...]
 ```
 
-#####Funções agregadas mais comuns
+##### Funções agregadas mais comuns
 ```SQL
 COUNT (*)
 COUNT ([ALL|DISTINCT] nome_da_coluna)
@@ -847,7 +847,7 @@ MAX   ([ALL|DISTINCT] nome_da_coluna)
 MIN   ([ALL|DISTINCT] nome_da_coluna) STDDEV ([ALL|DISTINCT] nome_da_coluna) VARIANCE ([ALL|DISTINCT] nome_da_coluna)
 ```
 
-#####EXEMPLOS
+##### EXEMPLOS
 ```SQL
 SELECT AVG(preco) MEDIA FROM PRODUTOS;
 SELECT AVG(NVL(preco,0)) MEDIA FROM PRODUTOS;
@@ -857,10 +857,10 @@ SELECT COUNT(*) NUM_CLIENTES FROM CLIENTES; SELECT COUNT(ddd) FROM TELEFONES;
 -- a função NVL() coverte valores nulos em um valor computável
 ```
 
-####GROUP BY
+#### GROUP BY
 Pode ser utilizada em um SELECT para agrupar resultados, gerando subtotais por grupos em novas colunas.
 
-#####Forma Geral
+##### Forma Geral
 
 ```SQL
 SELECT nome_da_coluna [, ...], função_agregada [, ...]
@@ -869,7 +869,7 @@ GROUP BY [ALL] nome_da_coluna [, ...]
 ORDER BY colunas
 ```
 
-#####OBS:
+##### OBS:
 -   ALL inclui no resultado todos os grupos, incluindo os que não atendem às condições de busca.
     <br>
 -   As colunas no SELECT devem obrigatóriamente estar no GROUP BY.
@@ -881,7 +881,7 @@ ORDER BY colunas
 -   ORDER BY não é obrigatória, mas comum pois organiza o resultado.
 
 
-#####EXEMPLOS:
+##### EXEMPLOS:
 
 ```SQL
 CREATE TABLE PRODS
@@ -933,11 +933,11 @@ GROUP BY tipo, usuario
 ORDER BY tipo, usuario;
 ```
 
-####GROUP BY com HAVING
+#### GROUP BY com HAVING
 HAVING é usada em conjunto com GROUP BY.
 Ela determina quais dos grupos gerados farão parte do resultado final. Os grupos que não satisfaçam as condições de HAVING são descartados.
 
-#####Forma geral
+##### Forma geral
 ```SQL
 SELECT nome_da_coluna[, ...], função_agregada[, ...]
 FROM nome_da_tabela[, ...]
@@ -954,7 +954,7 @@ GROUP BY CID.nome
 HAVING COUNT(*) > 10;
 ```
 
-##Subconsultas
+## Subconsultas
 São comandos SELECT aninhados dentros de outros comandos SELECT, INSERT, UPDATE ou DELETE.
 Podem existir, inclusive, subconsultas dentro de subconsultas. O número de níveis permitidos depende do SGBD.
 
@@ -964,7 +964,7 @@ Basicamente existem dois tipos de subconsultas:
 -   Que retornam um conjunto de valores(ou registros).
 
 
-####Que retornam um único valor
+#### Que retornam um único valor
 EX:
 Como obter titulos de produtos mais caros que o produto de código 9?
 
@@ -997,7 +997,7 @@ WHERE preco >
 ```
 
 
-####Atualizações com subconsultas:
+#### Atualizações com subconsultas:
 É possível fazer subconsultas dentro de INSERT, UPDATE e DELETE.
 
 EX com INSERT
@@ -1044,11 +1044,11 @@ WHERE codigo IN
 
 
 
-##Indexação
+## Indexação
 
 Como o SGBD não pode guardar dados de forma ordenada por uma coluna pois restringiria a capacidade de fazer consultas por outras colunas a estratégia adotada pelos SGBD é criar um **arquivo de índice** que irá conter a **chave de busca** e um ponteiro físico para aquela linha.
 
-####rowid
+#### rowid
 É uma pseudo coluna que fornece o endereço físico de uma coluna.
 Nessa estrutura está o endereço completo para o SGBG encontrar o registro no disco. Ele acessa diretamente o DATABLOCK no disco, sendo a forma mais eficiente de recuperar a informação do disco.
 
@@ -1057,7 +1057,7 @@ EX:
 SELECT cod_autor, nome, rowid FROM autores;
 ```
 
-#####O que precisamos para indexar uma tabela?
+##### O que precisamos para indexar uma tabela?
 **Outro arquivo** com a **Chave de busca ordenada**, mais o rowid.
 
 Cada novo índice é um arquivo novo contendo a coluna ordenada(chave de busca) + o rowid.
@@ -1066,13 +1066,13 @@ Resumidamente o índice é um arquivo separado e possui duas informações, a ch
 O Oracle cria automaticamente índice de chave primária(PK) para garantir que não exista repetição de dados. Quando for inserido um novo dado é preciso verificar se ele já não existe e a busca precisa ser eficiente.
 Traz vantagens nas consultas.
 
-#####Desvantagens:
+##### Desvantagens:
 -   Cada novo registro precisa atualizar os ìndices.
 -   Devemos equilibrar a quantidade de ìndices VS inserções.
 -   Temos de criar só os índices extremamente necessários.
 -   Não são criados índices para chaves estrangeiras (Foreign Key - FK)
 
-####Sintaxe de criação de Índice:
+#### Sintaxe de criação de Índice:
 ```SQL
 CREATE INDEX <nome do índice> ON <nome da tabela>(<nome da coluna>);
 ```

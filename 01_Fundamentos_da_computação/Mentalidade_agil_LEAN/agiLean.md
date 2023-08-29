@@ -4,13 +4,13 @@
 ##### Professores: Rodrigo Giaffredo E Alessandra Costa Smolenaars Dutra.
 
 
->"Quando eu estou implementando uma mentalidade ágil,
->eu estou provocando,
->estimulando uma **<i>transformação organizacional</i>**
->**<i>Lilian Treff</i>**
+> "Quando eu estou implementando uma mentalidade ágil,
+> eu estou provocando,
+> estimulando uma **<i>transformação organizacional</i>**
+> **<i> Lilian Treff </i>**
 
 <br>
-##Ementa da disciplina
+## Ementa da disciplina
 
 - Definição de Lean;
 
@@ -36,7 +36,7 @@
 
 ------------
 
-##Definição de Lean
+## Definição de Lean
 
 A metodologia lean vai muito além do sistema de produção Toyota.
 Caracteristicas:
@@ -53,17 +53,17 @@ Caracteristicas:
 
 - ...badeado em um sistema puxado <i>(pull system).</i>
 
-##Lean vs Àgil ou Lean & Ágil?
+## Lean vs Àgil ou Lean & Ágil?
 Análise comparativa entre Lean e Ágil.
 
-####Lean
+#### Lean
 O Lean em sua êssencia visa aumentar a eficiência dos processos e a qualidade dos produtos, minimizando custos e desperdícios.
 
-####Ágil
+#### Ágil
 Diversas metodologias tornam as equipes capazes de atender às demandas dos clientes por meio de desenvolvimento iterativo e entrega frequente.
 (Scrum, XP, Crystal, entre outras)
 
-####Objetivos Compartilhados
+#### Objetivos Compartilhados
 
 - Entregar valor percebido para o cliente;
 - Melhorar continuamente;
@@ -72,7 +72,7 @@ Diversas metodologias tornam as equipes capazes de atender às demandas dos clie
 <h2>Pensamento Lean Agile e<br>
 Princípios Ágeis</h2>
 
-####Pilares do Lean
+#### Pilares do Lean
 
 - Liderança
   - Líderes confiam e dão aotonomia aos profissionais na realização do trabalho.
@@ -87,7 +87,7 @@ Princípios Ágeis</h2>
     - Balanceie as responsábilidades
     - Entregue com muita qualidade
   
-##Manifesto Ágil
+## Manifesto Ágil
 Documento criado em fevereiro de 2001, que representa uma declaração de princípios essenciais para o desenvolvimento ágil de software.
 Os 12 principios do manifesto ágil são:
 
@@ -119,37 +119,37 @@ Os 12 principios do manifesto ágil são:
 12. Em intervalos regulares, a equipe reflete sobre como se tornar mais eficaz e então refina e ajusta seu comportamento de acordo.
     
 
-###Existem cinco princípios-chave para qualquer implementação lean, estabelecidos pela <i>Lean Enterprise Institute(LEI)</i>
+### Existem cinco princípios-chave para qualquer implementação lean, estabelecidos pela <i>Lean Enterprise Institute(LEI)</i>
 
-####Valor
+#### Valor
 -   entender o que é valor para o cliente(interno ou externo) de maneira empática.
 -   Direcionar recursos, esforços e tempo ao que tem valor percebido para o cliente.
 -   pensar na jornada, a fim de localizar as causas-raiz a serem trabalhadas para resolução de problemas e para o aproveitamento de oportunidades.
 
-####Fluxo de Valor
+#### Fluxo de Valor
 -   Identificar os processos e etapas que transformam matérias -primas ou ideias em produtos funcionais.
 -   Mapear o fluxo de valor(value stream Mapping) para identificar o processo pelo qual produtos e serviços são criados e entregues, identificando as etapas do processo que não agregam valor ao produto final.
 -   trabalhar para eliminar disperdícios.
 
-####Fluidez
+#### Fluidez
 -   Avaliar mudanças na estrutura organizacional.
 -   Corrigir individualiesmo e pensamento de grupo, fomentando colaboração com visão de fluxo de valor.
 -   Formar, sempre que possível e necessário, equipes multi disciplinares de acordo com a entrega.
 -   Repensar o <i>layout</i> do ambiente organizacional.
 
-####Pull
+#### Pull
 -   Monitorar gargalos no fluxo de valor <i>(task waiting time, estoques elevados).</i>
 -   Praticar gestão visual do trabalho, criando tensão construtiva.
 -   Atuar imediatamente nos eventuais problemas de fluidez identificados.
 -   Garantir a produção de apenas o necessário, na quantidade necessária.
 
-####Perfeição
+#### Perfeição
 -   Melhorar continuamente com visão de fluxo de valor - kaizen.
 -   Definir objetivoss grandiosos, e persegui-los em conjunto.
 -   Corresponsabilizar todos os integrantes do fluxo de valor pelo sucesso ou fracasso da entrega.
   
 
-##Pensamento Ágil aplicado à projetos
+## Pensamento Ágil aplicado à projetos
 Mentalidade é o conjunto de comportamentos que nos ajuda a aceitar ou adotar normas culturais. Portanto, quando desejamos imprimir agilidade aos diferentes projetos de uma organização, o pensamento ágil deve tornar parte fundamental da sua cultura.
 
 -   Hábitos
@@ -210,72 +210,72 @@ Aferimos a aplicação do pensamento ágil ao trabalho de uma organização medi
 
 <i>**...e tudo isso independentemente da escala,<br> das metodologias selecionadas,<br> ou do tipo de trabalho realizado.**</i>
 
-##Pensamento Sistêmico
+## Pensamento Sistêmico
 O pensamento sitêmico adota uma abordagem holística para o desenvolvimento de soluções, incorporando todos os aspectos de um sistema e seu ambiente ao projetar, desenvolver, implantar e manter o próprio sistema.
 
-####Aspectos Primários do Pensamento Sistêmico
+#### Aspectos Primários do Pensamento Sistêmico
 
 -   Entender que a solução é um sistema.
 -   Entender que a empresa que constrói a solução é um sistema.
 -   Entender e otimizar todo o fluxo de valor do desenvolvimento.
 
-##Comportamento Ágil
+## Comportamento Ágil
 Atitudes da força de trabalho em organizações flexiveis e adaptáveis podem ser agraupados em três dimensões:
-####Proatividade
+#### Proatividade
 A dimensão da proatividade está associada à identificação, pesquisa e resolução antecipada de problemas e oportunidades de melhoria.
 - Antecipação de problemas decorrentes das mudanças constantes
 - Solução dos problemas identificados até o limite da autonomia
 - Iniciativa pessoal, inclusive no desenvolvimento da autonomia.
 - 
-####Adaptabilidade
+#### Adaptabilidade
 A dimensão adaptabilidade está associada às características individuais e das equipes que facilitam em cenários de mudança.
 - Adaptabilidade cultural e interpessoal.
 - Colaboração espontânea
 - Aprendizagem constante e busca por novas responsabilidades.
 - Flexibilidade profissional(cotidiano e carreira).
 
-####Resiliência
+#### Resiliência
 A dimensão resiliência está associada às atitudes e reações relacionadas ao stress, à situações inesperadas, e à inovação.
 - Atitude positiva em relação a mudanças, novas ideias e novas tecnologias.
 - Tolerância às incertezas e às situações inesperadas.
 - Capacidade de lidar com o stress, e com ambientes estresantes.
   
-##Práticas do Lean-Agile
+## Práticas do Lean-Agile
 
 Organizações ágeis estão apoiadas em 4 topologias de equipe distintas, as quais especificam comportamentos e responsábilidades, e simplificam drasticamente o trabalho de design organizacional.
 
-#####Stream-aligned
+##### Stream-aligned
 Organizada em torno do fluxo de trabalho, entrega valor diretamente ao cliente.
 
-#####Complicated subsystem
+##### Complicated subsystem
 Organizada em torno de subsistemas específicos, exige especialização.
 
-#####Plataform
+##### Plataform
 Organizada em torno do desenvolvimento e suporte de plataformas que servem outras equipes.
 
-#####Enablement
+##### Enablement
 Organizada para auxiliar equipes com capacidades específicas a se tornarem proficientes em novas tecnologias.
 
 
-####Práticas do lean-agile das Equipes
+#### Práticas do lean-agile das Equipes
 No nível mais granular(o das equipes), as organizações lean-agile "emprestam" cerimônias e práticas de metodoligias tais como Scrum, XP e Kanban.
 
 
-##Produto Mínimo Viável(MVP)
+## Produto Mínimo Viável(MVP)
 Um produto mínimo viável (MVP) é um conceito da <i>startup</i> enxuta que enfatiza o impacto do aprendizado no desenvolvimento de novos produtos.
 O principal benefício do MVP é a possibilidade de entender - o mais cedo possível - o interesse do cliente pela entrega, sem desenvolve-la completamente(eliminando desperdícios).
 <br>
 Um MVP é a versão mais simples de um produto que pode ser disponibilizado aos usuários para validar uma ideia de negócio.
 
-##melhoria COntínua (Kaizen)
+## melhoria COntínua (Kaizen)
 A expressão melhoria contínua se torna abstrata quando não colocada num contexto específico. De forma genérica, e a busca infinita pela perfeição em tudo que se faz.
 
-####Kaizen
+#### Kaizen
 A gestão enxuta trabalha constantemente na redução de 3 tipos de desperdício: Muda, Mura e Muri OU traduzidos significam: desperdício, desnível e sobrecarga.
 É possível abordar a melhoria contínua de maneira sistemática em organizações <i>lean-agile,</i> principalmente através de técnicas estruturas como PDCA.
 <h5 style="color: green">Plan > Do > Check > Act</h5>
 
-##Just in Time e Kanban
+## Just in Time e Kanban
 
 -   A abordagem just in time propõe que ao invés de mantermos grandes quantidades de componentes à mão para quando necessário, façamos "pedidos"(puxemos) com mais frequência e em quandidades menores.
 
@@ -290,7 +290,7 @@ A gestão enxuta trabalha constantemente na redução de 3 tipos de desperdício
 |Integrar e testar|5 Dias|
 |Aceito|
 
-##Gestão Visual, Andon e <i>Last Planner® System</i>
+## Gestão Visual, Andon e <i>Last Planner® System</i>
 -   Gestão visual é a proposta de usar elementos visuais simples e instintivos para comunicar informações importantes, de maneira mais clara e rápida possível.
 O beneficio latente é o aumento da capacidade de transmitir <i>insights</i> críticos rapidamente, resultando em aceleração da fluidez do trabalho no fluxo de valor.
 
@@ -300,7 +300,7 @@ O beneficio latente é o aumento da capacidade de transmitir <i>insights</i> cr�
 
 -   O sistema <i>Last Planner</i> é uma ferramenta lean aplicada no setor de construção cívil, que tem por objetivo envolver no planejamento detalhado da obra, os responsáveis por executá-la ou supervisioná-la.
 
-####Produto e Resultado Enxuto
+#### Produto e Resultado Enxuto
 O desenvolvimento enxuto de produtos é o processo que tem por finalidade construir soluções mais rapidamente, com menos disperdícios.
 Organizações Lean-Agile entregam resultados com alto valor percebido para o cliente através dos fluxos de valor mais eficientes, de forma iterativa e incremental, e sem disperdícios.
 
