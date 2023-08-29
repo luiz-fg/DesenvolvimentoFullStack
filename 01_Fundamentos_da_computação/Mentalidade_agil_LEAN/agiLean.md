@@ -1,7 +1,7 @@
 
 <h1 style="color: #E1BE5A;">MENTALIDADE ÁGIL<br> LEAN</h1>
 
-#####Professores: Rodrigo Giaffredo E Alessandra Costa Smolenaars Dutra.
+##### Professores: Rodrigo Giaffredo E Alessandra Costa Smolenaars Dutra.
 
 
 >"Quando eu estou implementando uma mentalidade ágil,
