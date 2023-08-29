@@ -1,7 +1,7 @@
 
 <h1 style="color: #E1BE5A;">ARQUITETURA  CLIENT-SIDE</h1>
 
-#####P rofessores: André Luiz Mendes Pereira e Júlio Henrique Araújo Pereira Machado.
+##### Professores: André Luiz Mendes Pereira e Júlio Henrique Araújo Pereira Machado.
 
 
 >"Nenhum software é **100% seguro"**. <br>
