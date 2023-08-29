@@ -48,7 +48,7 @@ jobs:
         uses: docker/login-action@v2.2.0
         with:
           username:  ${{secrets.DOCKERHUB_USERNAME}}
-          password:  ${{SECRETS.DOCKERHUB_PASSWORD}}
+          password:  ${{secrets.DOCKERHUB_PASSWORD}}
           
 
       - name: construção da imagem docker
