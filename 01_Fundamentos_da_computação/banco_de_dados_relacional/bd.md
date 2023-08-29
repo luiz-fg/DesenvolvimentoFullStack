@@ -9,6 +9,7 @@
 > **<i>Daniela Rodrigues</i>**
 
 <br>
+
 ## Ementa da disciplina
 
 - Visão geral da abordagem de banco de dados.

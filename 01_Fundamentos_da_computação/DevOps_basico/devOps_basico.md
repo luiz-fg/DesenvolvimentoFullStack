@@ -1,7 +1,7 @@
 
 <h1 style="color: #E1BE5A;">DEVOPS BÁSICO</h1>
 
-#####Professores: Fabrício Veronez e Marco Aurélio Souza Mangan.
+##### Professores: Fabrício Veronez e Marco Aurélio Souza Mangan.
 
 
 >"Qualquer bom profissional de desenvolvimento
@@ -9,7 +9,8 @@ de software deve conhecer **paradigmas**.
 >**<i>Alessandro Valério</i>**
 
 <br>
-##Ementa da disciplina
+
+## Ementa da disciplina
 
 - Estudo de Arquitetura cliente-servidor para aplicações web SPAs (Single Page Applications).
 
@@ -30,7 +31,7 @@ de software deve conhecer **paradigmas**.
 
 ------------
 
-##Fundamentos
+## Fundamentos
 
 Como é visto processo de desenvolvimento de software ?
 
@@ -100,9 +101,9 @@ Entre esses dois prifissionais existe um outro que é a junção do desenvolvedo
  ![Imagem sobre devops -](img/devops.png)
 
 
-##Boas práticas de dev para DevOps
+## Boas práticas de dev para DevOps
 
-####Twelve Factor Apps
+#### Twelve Factor Apps
 -   utilizar formatos declarativos para configuração de ambientes para facilitar automação
 -   Garantir a maior portabilidade possível entre ambientes
 -   Ter compatibilidade com plataformas de nuvem, sem depender do servidores e administração de sistemas
@@ -152,31 +153,31 @@ Para versionar código podemos usar o github que é um repositório git amplamen
 -   <a href="https://docs.github.com/en/get-started/quickstart/hello-world" target="_blank">Tutorial GitHub</a>
 
 
-##Introdução à containers
+## Introdução à containers
 
 Algo que gerá dúvida e enganos é considerar que container é de infra, containers são para desenvolvimento e facilitam muito o dia a dia.
 
-####Construção de software sem o uso de containers:
+#### Construção de software sem o uso de containers:
 
 Antes da containerização das aplicações os profissionais de infra precisavam replicar o ambiente de desenvolvimento que estava no computador do desenvolvedor.
 O método tradicional dificultava a migração das aplicações pois nem sempre o código era compatível no novo ambiente.
 Como resultado dessa migração haviam as ocorrências de bugs, erros e problemas que demandavam correções que resultava em mais tempo "perdido".
 
-####Construção de software com o uso de containers:
+#### Construção de software com o uso de containers:
 Com o empacotamento de aplicações, basta migrar o container de uma plataforma para a outra e tudo permanece funcionando.
 Isolamento de processos é uma ideia que exista a anos mas somente com a apresentação do Docker Engine pela Docker em 2013 é que se estabeleceu um padrão para o uso dos containers.
 
-#####Benefícios
+##### Benefícios
 -   Leveza
 -   Portabilidade
 
-#####Containers vs máquinas virtuais.
+##### Containers vs máquinas virtuais.
 -   Uma máquina virtual é um ambiente que funciona tal qual um computador físico, com sua própria CPU, memória, interface de rede e afins.
 <br>
 -   Conteinerização e virtualização são muitos semelhantes porque ambos possibilitam isolar totalmente as aplicações mas as diferenças estão no tamanho e potabilidade.
 Containers são menores que máquinas virtuais e não contem nada maior que uma aplicação e seu ambiente de execução ao contrário das maquinas virtuais que podem abstrair, dividir, duplicar e emular servidores, sistemas operacionais, computadores e afins...
 
-#####Containers vs microserviços
+##### Containers vs microserviços
 Containers podem ser usados para empacotar funcionalidades que executam tarefas específicas. Essas funcionalidades são chamadas de microserviços.
 Microserviços são parte de uma aplicação maior dividida em serviços especializados.
 Microserviços e containers foram feitos um para o outro.
@@ -185,7 +186,7 @@ Microserviços e containers foram feitos um para o outro.
 -   <a href="https://docs.docker.com/" target="_blank">Docker: download - instalação - get started e outros</a>
 -   <a href="https://learn.microsoft.com/pt-br/visualstudio/docker/tutorials/docker-tutorial" target="_blank">Tutorial: criar um app do Docker com visual studio Code(integrar vscode e docker)</a>
 
-####Usando docker.
+#### Usando docker.
 
 -   Crie uma conta na docker
 -   Faça download e instale docker desktop
@@ -300,7 +301,7 @@ docker container run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongouser -
 Para acessar o mongodb será preciso o download do studio 3t  que pode ser obtido em <a href="https://studio3t.com/download-studio3t-free/" target="_blank">https://studio3t.com/download-studio3t-free/</a>
 
 
-####Mais uso do docker
+#### Mais uso do docker
 
 -   rodar docker container ubuntu com bash  
 ```powershell
@@ -362,12 +363,12 @@ docker system prune -a
 docker container run -it namespace/nome-container:versão
 ```
 
-####rodar aplicação no docker
+#### rodar aplicação no docker
 -   na pasta da aplicação criar dockerfile e seguir os passos anteriores
   
 -   Subir a aplicação para o docker hub
 
-####baixar a aplicação e executar ela - Não esquecer de fazer port binding
+#### baixar a aplicação e executar ela - Não esquecer de fazer port binding
 ```powershell
 docker container run -i-d -p porta:porta namespace/nome-da-imagem
 ```
@@ -399,11 +400,11 @@ docker container run -i-d -p porta:porta namespace/nome-da-imagem
    -  define o seu diretório corrente.
 
 
-####Integração pipeline CI
+#### Integração pipeline CI
 é um conjunto de etapas sequenciais automatizadas que permitem a criação e implementação de código em um ambiente de produção.
 a partir do commit do desenvolvedor passaremos por todas as etapas de validação e teste para incorporar o novo código numa nova versão da aplicação.
 
-####Criando uma pipeline
+#### Criando uma pipeline
 
 -   Acesso o github
 -   Entre no repositório / projeto 

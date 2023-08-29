@@ -1,7 +1,7 @@
 
 <h1 style="color: #E1BE5A;">PROGRAMAÇÃO<br> ORIENTADA A OBJETOS</h1>
 
-#####Professores: Alessandro Valério e Edson Ifarraguirre Moreno.
+##### Professores: Alessandro Valério e Edson Ifarraguirre Moreno.
 
 
 >"Não adianta você ser um bom programador,
@@ -9,7 +9,8 @@
 >**<i>Juliana Remor</i>**
 
 <br>
-##Ementa da disciplina
+
+## Ementa da disciplina
 
 - Estudo sobre conceitos de Classes (atributos, métodos, propriedades, visibilidade, instancia ou classe).
 
@@ -32,49 +33,49 @@ São diversas as linguagens de programação que implementam a orientação a ob
 -   Python
 -   e Ruby
 
-##Conceitos I
+## Conceitos I
 
-####Programação estruturada
+#### Programação estruturada
 Surgida nos anos 1940, com as primeiras linguagens de caráter algorítmico, as quais visavam resolvar problemas
 especificos, é um paradigma com foco em sequência (de itens, comandos, dados...), em decisão (testes lógicos)
 e em iteração (repetição);
 
-####Programação procedural
+#### Programação procedural
 Paradigma com foco no uso de procedimentos e funções para facilitar o reuso, estão não só nos elementos da programação estruturada, mas um conjunto de funções.
 O maior dilema da programação estruturada e da programação procedural é que o elevado número de funções, em meio às quais não há qualquer senso de pertencimento, e a falta de isolamento de alguns dados gerou uma série de problemas.
 havia muito interdependência de funções, muito "copia e cola", as mudanças em uma função resultavam em mudanças em outras funções...
 
 
-##Conceitos II
+## Conceitos II
 
-####Programação Orientada a Objetos
+#### Programação Orientada a Objetos
 Trafa-se de um paradigma com foco no uso de objetos, em que cada um contém suas próprias variáveis, funções (métodos) e conjuntos de dados (atributos). Esses objetos, uma construção a partir da qual podemos criar elementos semelhantes, possuem uma série de componentes:
 um nome único, atributos/variáveis e comportamentos/métodos.
 
 
-####Objeto
+#### Objeto
 Um objeto pode ser definido como uma coleção de dados e/ou funcionalidades com alguma relação entre si. Vale sublinhar que dados, variáveis, atributos e propriedades podem ser
 considerados sinônimos no contexto de programação orientada a objetos.
 
-####Atributo ou propriedade
+#### Atributo ou propriedade
 Trata-se de um ou mais dados que estão presentes em um objeto. Os atributos e propriedades possuem um nome único e armazenam um valor ou uma referência.
 
 
-####Acesso e atribuição
+#### Acesso e atribuição
 O acesso às propriedades ou atributos de um objeto se dá por meio do comando nomeObjeto.nomePropriedade. 
 O acesso aos vetores, por sua vez, se dá pelo comando **<i>nomeObjeto[“nomePropriedade”]</i>**.
 Para mudar o valor de uma propriedade, é preciso executar uma atribuição, que pode ser feita de duas formas:
 **<i>nomeObjeto.nomePropriedade = algo</i>**, ou **<i>nomeObjeto[“nomePropriedade”] = algo</i>**.
 
-####Métodos
+#### Métodos
 O método representa uma ou mais funcionalidades presentes em um objeto.
 Assim como atributos, os métodos possuem nome único. Álem disso, representam também uma lógica pertinente ao objeto.
 A única forma de acessar um método é por meio do comando nomeObjeto.metodo(). Se houver parâmetros, usa-se nomeObjeto.metodo(parametro).
 Assim como no caso das propriedades, podemos mudar um método através da atribuição.
 
-##Pilares da Programação Orientada a Objetos
+## Pilares da Programação Orientada a Objetos
 
-####Encapsulamento
+#### Encapsulamento
 
 - Permitir que atributos e métodos sejam **agrupados** de certa forma em uma **interface bem definida** para manipular os dados de um objeto de forma eficiente.
 - **Isolamento** entre partes de um programa.
@@ -97,7 +98,7 @@ const empregado = {
 console.log(empregado.calculaSalario());
 ~~~~
 
-####Abstração
+#### Abstração
 
 - POO é **amplamente baseada** na abstração digital da vida real.
 - **Objetos** são representações/abstrações do que queremos implementar do que observamos no mundo ao nosso redor.
@@ -105,7 +106,7 @@ console.log(empregado.calculaSalario());
 
 ![imagem abstração-](./img/abstracao.jpg)
 
-####Herança
+#### Herança
 
 -   Permite o **compartilhamento** de atributos e métodos entre objetos.
 -   <u>Reaproveita código</u> e <u>agrupa o que é comum</u> a diferentes objetos.
@@ -117,7 +118,7 @@ console.log(empregado.calculaSalario());
 
 ![conceito de herança imagem 2-](./img/heranca_2.png)
 
-####Polimorfismo
+#### Polimorfismo
 - Através da <u>herança</u> é possível **alterar um comportamento herdado** de um objeto-pai.
 
 - Permite uma forte <u>separação de interesses</u>
@@ -126,13 +127,13 @@ console.log(empregado.calculaSalario());
 
 ![conceito de polimorfismo-](./img/polimorfismo.png)
 
-#####sobrescrita
+##### Sobrescrita
 Métodos com o <u>mesmo nome e assinatura</u> **em diferentes objetos** relacionados por **herança**
 
 ![conceito de sobrescrita-](./img/sobrescrita.png)
 
 
-#####Sobrecarga
+##### Sobrecarga
 Métodos com o <u>mesmo nome</u> mas **diferentes assinaturas em diferentes objetos** relacionados por **herança**
 <h1 style="color:red;">Javascript Não suporta sobrecarga</h1>
 

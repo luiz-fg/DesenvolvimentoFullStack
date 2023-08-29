@@ -1,7 +1,7 @@
 
 <h1 style="color: #E1BE5A;">FUNDAMENTOS DE<br> COMPUTAÇÃO E<br> ALGORITMOS</h1>
 
-#####Professores: Mário Souto e Edson Ifarraguirre Moreno.
+##### Professores: Mário Souto e Edson Ifarraguirre Moreno.
 
 
 >"Quando você está na computação, pensa muito em problema e solução, mas quando a
@@ -9,7 +9,7 @@
 >querem expressar".
 >**Katia Canepa Vega**
 
-##Ementa da disciplina
+## Ementa da disciplina
 
 - Entendimento de algoritmos e estruturas de dados (listas, filas, pilhas e árvores) na solução de problemas
 
@@ -17,8 +17,8 @@
 
 - Análise da aplicabilidade e manejo de estruturas de dados lineares e hierárquicas.
 
-##Fundamentos
-#####Software e Hardware
+## Fundamentos
+##### Software e Hardware
 
 - Software consiste em um conjunto de instruções ou programas de computador projetados para realizar tarefas específicas em computadores ou dispositivos eletrônicos. Ele é composto por códigos de programação que permitem que o computador execute uma variedade de funções e operações. A complexidade dos softwares pode variar, desde pequenas aplicações até sistemas operacionais completos que gerenciam recursos e possibilitam a execução de outros programas.
 
@@ -43,11 +43,11 @@ Os softwares desempenham um papel essencial na tecnologia moderna, possibilitand
   ![Tirinha vida de suporte -](img/Suporte_3012-1.jpg)
 
 
-  ##História
+  ## História
 O ENIAC foi o primeiro grande computador eletrônico em larga escala da história. O objetivo era criar uma máquina capaz de realizar cálculos complexos em uma fração de tempo que levaria para um ser humano. Hoje em dia, até o aparelho mais simples possui capacidade superior ao ENIAC, mas na época a monstruosidade de 30 toneladas, com mais de 150 m² de área e com mais de 17 mil válvulas, precisava de nada menos do que 6 (seis) mulheres para realizar a programação.
 Era o que existia de mais moderno.
 
-##Como a internet funciona ?
+## Como a internet funciona ?
 Basicamente a internet é um gigantesca rede de computadores que se cominicam juntos, a espinha dorsal da web, a infraestrutra tecnica que torna a web possível.
 Existem dois conceitos fundamentais para o funcionamento da internet: PACOTES E PROTOCOLOS
 
@@ -63,7 +63,7 @@ A internet consiste em uma rede de redes de computadores, e para que a comunica�
 Esse problema é solucionado através de protocolos padronizados.
 Existem protocolos para enviar pacotes na mesma rede (Ethernet), de uma rede para outra (IP), para assegurar que os pacotes cheguem com sucesso e na ordem correta (TCP), bem como para a formatação de dados em aplicativos e sites (HTTP). Além desses, existem protocolos de criptografia, de roteamento e muitos outros.
 
-##Conexão cliente e servidor
+## Conexão cliente e servidor
 Computadores conectados a internet são chamados de clientes e servidores.
 
 **- Cliente**
@@ -94,7 +94,7 @@ Através do servidor web, estabelecemos comunicação, sendo ele um componente f
   **_Cada solução apresenta vantagens e desvantagens, portanto, é fundamental alinhar-se com os demais setores da empresa para determinar a melhor alternativa a ser adotada._**
 
 
-##Pensamento Computacional
+## Pensamento Computacional
 É importante pensar em como uma função é construída, em um pensamento computacional existe um caminho a seguir oara conduzir uma solução.
 A partir da apresentação de um problema, seguimos para a exploração e entendimento das caracteristicas de funcionamento do problema para que, com os
 conhecimentos adquiridos e recursos computacionais, possamos traçar caminhos e definir a melhor solução a ser aplicada.
@@ -105,11 +105,11 @@ Antes de começar a programar, é importante que se tenha em mente qual é exata
 >**_"Para um problema, existem necessáriamente várias funções que podem ser aplicadas, 
 >nem todas são necessariamente boas."_**
 
-##Modularização
+## Modularização
 A modularização vem da criação de funções dentro do código.
 Uma vez chamada essa função, existe um conjunto de comandos associados a essa função, quando executados irão retornar ou não um valor.
 
-##Complexidade Algorítmica
+## Complexidade Algorítmica
 Quando criamos uma solução computacional, muitas veses, é preciso parar e analizar se a solução é a melhor.
 Uma solução pode resolver uma problema e não ser necessariamente a melhor para este problema.
 Para definir se um algoritmo é eficiente precisa-se avaliar algumas características de espaço ocupado, desempenho e tempo gasto na execução.
@@ -119,16 +119,16 @@ Uma das formas de medir se uma solução é adequada ou não, é o calculo de te
 Pois nosso sistema computacional não está dedicado exclusivamente ao que queremos que ele execute.
 
 
-##Avaliação de Desempenho
+## Avaliação de Desempenho
 O cálculo de tempo pode não ser a melhor abordagem para avaliar o desempenho de um programa.
 Mensurar o melhor, o médio e o pior caso de uso é outra solução. para isso, contamos operações e a partir disso formula-se uma equação para definir qual o melhor compartamento
 do algoritmo.
 O cálculo consiste em contar quantas operações primítivas são executadas, para diferentes algoritmos teremos diferentes comportamentos.
 
 
-##Conceitos básicos da linguagem
+## Conceitos básicos da linguagem
 
-#####Operadores padrão
+##### Operadores padrão
 
 ```javascript
 /*
@@ -165,7 +165,7 @@ Operadores Lógicos
 
 ```
 
-#####declaração de variável
+##### Declaração de variável
 
 **- var** define uma variável mutável de escopo global.
 
@@ -180,7 +180,7 @@ let idade = 30;
 const cpf = 00099900099;
 ```
 
-#####comandos de seleção (if / else / else if)
+##### Comandos de seleção (if / else / else if)
 
 ```javascript
 
@@ -259,7 +259,7 @@ switch(numero)
 ```
 
 
-####comandos de repetição (loops)
+#### Comandos de repetição (loops)
 
 ```javascript
 
@@ -309,7 +309,7 @@ while(i > 0 && i < 5);
 
 ```
 
-####Criação de funções
+#### Criação de funções
 
 ```javascript
 
@@ -328,7 +328,7 @@ function meuNome(nome)
 
 ```
 
-##Array
+## Array
 Uma das estruturas de dados padrões para linguagens é o array, que armazena dados de forma contínua na memória.
 Ele facilita percorrer os dados armazenados e evita a criação de multiplas variáveis que possuem a mesma finalidade.
 Por ser um recurso indexado o array permite acessar elementos individuais dentro dele.
@@ -358,7 +358,7 @@ const outroArray = new Array("primeiro", "segundo", "terceiro");
 
 ```
 
-##Tipos derivados de Array
+## Tipos derivados de Array
 
 Explora estrutura de dados de Array
 Útiliza métodos específicos do Array que garantem comportamento adequado
@@ -490,7 +490,7 @@ console.log("Tamanho da fila:", fila.size());
 
 ```
 
-##Conjuntos(set)
+## Conjuntos(set)
 - Estrutura de dados simples como array
    - Também armazena dados de forma contigua na memória
 - Não armazena dados duplicados.
@@ -537,7 +537,7 @@ console.log([...new Set(numeros)]);
 
 
 
-##Dicionários (Maps)
+## Dicionários (Maps)
 
 - Estrutura de dados simples como Array
 	- Também armazena dados de forma contígua na memória

@@ -1,15 +1,16 @@
 
 <h1 style="color: #E1BE5A;">PROGRAMAÇÃO PARA WEB</h1>
 
-#####Professores: Andrea Konzen e Luis Fernando Gonzalez.
+##### Professores: Andrea Konzen e Luis Fernando Gonzalez.
 
 
 >"Todo mundo surfa na onda da tecnologia,
->**<i>todo mundo ganha com isso na tecnologia.</i>**
+>**<i>todo mundo ganha com isso na tecnologia.</i>** <br>
 >**<i>Cassio Trindade</i>**
 
 <br>
-##Ementa da disciplina
+
+## Ementa da disciplina
 
 - Estudo do desenvolvimento de aplicações com HTML, CSS e JavaScript.
 
@@ -21,7 +22,7 @@
 
 ------------
 
-##Breve História
+## Breve História
 
 -   1960 - É criada a ARPANET
     -   Departamento de defesa dos EUA criou para conectar computadores de diferentes universidades e centros de pesquisa do país.
@@ -34,7 +35,7 @@
     -  entre 1990 e 2000 também surgiram salas de bate-papo, provedores de email, hospedagens de sites...
 -   2000 - A internet continua a crescer em popularidade e importância.
   
-##Arquitetura web e caracteristicas das Aplicações web
+## Arquitetura web e caracteristicas das Aplicações web
 É um conjunto de padrões, princípios, técnicas e boas praticas utilizadas para projetar e desenvolver sistemas e aplicações web.
 ela é responsável pordefinir:
 -   A estrutura
@@ -42,7 +43,7 @@ ela é responsável pordefinir:
 -   As regras
 -   Os protocolos de comunicação entre componentes.
 
-####Caracteristicas importantes:
+#### Caracteristicas importantes:
 -   Escalabilidade
     -   lidar com grande volume de tráfego
 -  Flexibilidade
@@ -52,7 +53,7 @@ ela é responsável pordefinir:
 -  Performance
    -  ter desempenho rápido e eficiente
 
-####Arquiteturas mais comuns:
+#### Arquiteturas mais comuns:
 -   Arquitetura de 3 camadas(cliente-Servidor)
     -   divide a aplicação em: Front-end / back-end e banco de dados
 -   Arquitetura orientada a serviços(SOA)
@@ -61,56 +62,56 @@ ela é responsável pordefinir:
     -   divide em microsserviços independentes que se comunicam entre si por meio de APIs.
 
 
-##Protocolos
+## Protocolos
 toas as atividades de comunicação na internet são governadas por protocolos.
 Um protocolo controla e possibilita conexão, comunicação, tranferência de dados entre sistemas computacionais.
 
-###protocolos de internet:
+### Protocolos de internet:
 
-####TCP/IP
+#### TCP/IP
 Transmission  Control Protocol / Internet Protocol.
 Protocolo padrão da Internet, usado para transmitir dados entre dispositivos em redes de computadores.
 
-####HTTP / HTTPS
+#### HTTP / HTTPS
 HyperText Transfer Protocol / HyperText Transfer Protocol Secure
 usado para transferir dados da web entre servidor e navegador, também usado para solicitar páginas web e outros recursos.
 
-####FTP
+#### FTP
 File Transfer Protocol
 Protocolo de tranferência de arquivos entre dispositivos, amplamente usado para transferir arquivos grandes, como imagens, vídeos e arquivos de áudio.
 
-####DNS
+#### DNS
 Domain Name System
 Usado para traduzir nomes de domínio em endereços IP.
 Permite acessar sites e recursos web usando nomes de domínios em vez de endereços ip numéricos.
 
-####SMTP / POP3 / IMAP
+#### SMTP / POP3 / IMAP
 Simple Mail Transfer Protocol / Post Office Protocol / Internet Message Acesso Protocol
 SMTP - protocolo para envio de e-mails
 POP3 / IMAP - protocolos para recebimento de emails.
 
-####ICMP
+#### ICMP
 Internet Control Message Protocol
 Conjunto de regras de comunicação usados para informar erros de transmissão de dados em uma rede.
 
-###Protocolos de rede:
+### Protocolos de rede:
 
-####Aplicação
+#### Aplicação
 Responsável pela comunicação entre aplicativos entre diferentes dispositivos de rede.
 Define formatos de mensagens e regras de comunicação para dispositivos se comunicarem. Estabelece uma comunicação confiável entre origem e destino.
 
-####Transporte
+#### Transporte
 Responsável por fornecer comunicação confiável e eficiente entre aplicativos de diferentes dispositivos.
 Garanteq que os dados sejam transmitidos sem erros, na ordem correta e com velocidade adequeada.
 
-####Rede
-####enlace
-####Física
+#### Rede
+#### enlace
+#### Física
 
 
-##Front End & Back End
+## Front End & Back End
 
-###Front end
+### Front end
  É a parte do sistema web ou aplicativo que o usuário interage.
 É responsável pela parte visual. O front end é o processo de desenvolvimento da interface do usuário, incluindo o design, a codificação e a integração de todos os elementos que fazem parte dessa interface.
 
@@ -120,7 +121,7 @@ o Frontend envolve várias tecnologias e ferramentas:
 -   **Javascript**
 -   **Frameworks frontend**
 
-###Back end
+### Back end
 É a parte do sistema que fica no servidor e cuida da lógica do negócio, o armazenamento de dados e a segurançaa.
 A implementação do backend envolve várias tecnologias e ferramentas, incluindo frameworks, bancos de dados e linguagens de programação.
 
@@ -134,12 +135,12 @@ Várias linguagens de programação podem ser usadas para criar o backend inclui
 
 Cada linguagem possuí seus prós e contras, a escolha da linguagem dependerá das necessecidades do projeto.
 
-####Banco de dados
+#### Banco de dados
 São usados para armazenar e gerenciar dados dos aplicativos e sistemas.
 Existem vários tipos de banco de dados, incluindo bancos relacionais, e banco de dados noSQL.
 É importante escolher o tipo de banco de dados adequado para cada projeto e criar um estrutura eficiente e escalável.
 
-####Frameworks backend
+#### Frameworks backend
 Os frameworks backend são ferramentas que ajudam a desenvolver mais rapidamente aplicavos robustos e escaláveis.
 Existem diversos frameworks backend populares:
 -   Laravel - para php
@@ -149,17 +150,17 @@ Existem diversos frameworks backend populares:
 
 Cada framework tem suas próprias convenções e recursos, sendo importante escolher de maneira correta o que se adequa melhor ao projeto.
 
-####Segurança
+#### Segurança
 Medidas de segurança são importantes de serem implementadas, como **autenticação e autorização de usuários, criptografia de dados e prevenção de ataques**.
 
 
-####APIs e Backend
+#### APIs e Backend
 
 Quando o assunto é backend precisamos relacionarmos com as APIs.
 APIs são usadas para conectar diferentes sistemas e permitir a troca de informações entre os mesmos de maneira facilitada e eficiente.
 No contexto de backend, as APIs são usadas para expor funcionalidades e dados de um sistema para o uso externo. Elas fornecem uma maneira padronizada para que os desenvolvedores possam acessar as informações e funções do sistema semp precisar conhecer a fundo os detalhes do sistema.
 
-####Tipos de APIs
+#### Tipos de APIs
 
 -   API da web:
     -   Usadas para acessar informações e serviços da web
@@ -170,14 +171,14 @@ No contexto de backend, as APIs são usadas para expor funcionalidades e dados d
 
 Cada tipo de API tem suas especificidades e requisitos.
 
-####Segurança nas APIs
+#### Segurança nas APIs
 
 **- APIs** devem ser projetadas com autenticação e autorizações adequadas para proteger os dados e as funcionalidades do sistema.
 
 -   É importante limitar o número de requisições feitas para evitar sobrecargas do servidor da API e proteger contra ataques de negação de serviço (DDoS).
   
 
-  ##Tipos de sistemas para WEB: SPA, MPA e PWA.
+  ## Tipos de sistemas para WEB: SPA, MPA e PWA.
 
 - **SPA** - Single Page Application
   - Consiste em uma única página web que atualiza dinamicamente, permitindo construção de interfaces de usuários ricas e responsivas
@@ -224,34 +225,34 @@ Confiabilidade - Engajamento - Navegação Suave - Instalação Fácil - Compati
 -   Fácil distribuição
 
 
-##DOM
+## DOM
 É uma estrutura em árvore cujos nodos são cada elemento do documento HTML. os atributos também são modos na árvore DOM.
 é a base de uma SPA
 
 
-##Layout responsivo vs Layout adaptativo
+## Layout responsivo vs Layout adaptativo
 
-####Responsivo
+#### Responsivo
 Mesmo conteúdo, é definido através de CSS.
 
-####Adaptativo
+#### Adaptativo
 Conteúdo distinto, é gerado no servidor para o layout.
 
-##Web Design responsivo
+## Web Design responsivo
 Seu conteúdo é como água.
 Numa xicará, ele se torna a xicará
 Numa garrafa, ele se torna a garrafa.
 Num bule, se ele se torna o bule.
 Josh Clark - Bruce Lee.
 
-####Mobile-first
+#### Mobile-first
 -   Abordagem adotada por Luke Wroblewski em 2009
 -   Amplamente adotada nos dias atuais
 -   O Design é projetado inicialmente para dispositivos móveis
 -   Há pouco espaço na tela
 -   Foco no conteúdo
 
-####Media queries
+#### Media queries
 -   São declarações CSS condicionais
 -   permitem aplicar estilos de acordo com o dispositivo / ambiente
 -   Podem ser usadas de duas formas:
@@ -275,7 +276,7 @@ EX:
 </style>
 ```
 
-####Media queries - largura de tela
+#### Media queries - largura de tela
 
 -   width: Largura exata do viewport(pouco usado)
 -   min-width: Largura mínima do viewport
@@ -292,7 +293,7 @@ button{ width: auto; }
 }
 ```
 
-####Media brakepoints
+#### Media brakepoints
 - Utiliza larguras para diferenciar os tipos de dispositivos
 - cada "quebra" é chamada de media brakepoints
 - não existe consenso nos tamanhos
