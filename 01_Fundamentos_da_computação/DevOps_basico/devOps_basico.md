@@ -5,7 +5,7 @@
 
 
 >"Qualquer bom profissional de desenvolvimento
-de software deve conhecer **paradigmas**.
+de software deve conhecer **paradigmas**.<br>
 >**<i>Alessandro Valério</i>**
 
 <br>
