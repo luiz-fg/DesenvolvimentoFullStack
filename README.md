@@ -24,7 +24,6 @@
 - [Banco de dados NoSql ](02_Tecnologias_de_desenvolvimento/bd_NoSql/no_sql.md)
   <br>
 - [Design de UI](02_Tecnologias_de_desenvolvimento/Design_de_ui/UiDesign.md)
-
   <br>
 - [Microserviços](02_Tecnologias_de_desenvolvimento/microservicos/microservicos.md)
 
