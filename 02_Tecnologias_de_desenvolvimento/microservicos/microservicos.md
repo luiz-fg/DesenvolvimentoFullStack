@@ -136,10 +136,8 @@ Uma das grandes desvantagens é que a dificuldade em escalar o sistema. Muito co
 -   Isole falhas
     -   Use estratégias de resiliência para impedir que falhas em um serviço distribuam-se em cascata.
 
->"Everything fails
-<br>
->all the time"
-<br>
+>"Everything fails<br>
+>all the time"<br>
 ><i>Werner Vogels</i>
 
 
