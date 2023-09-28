@@ -25,9 +25,11 @@
   <br>
 - [Design de UI](02_Tecnologias_de_desenvolvimento/Design_de_ui/UiDesign.md)
   <br>
-- [Microserviços](02_Tecnologias_de_desenvolvimento/microservicos/microservicos.md)
-  <br>
 - [Qualidade e Teste de Software](02_Tecnologias_de_desenvolvimento/qualidade_teste_de_software/qualidade_e_teste.md)
   <br>
-- [Técnicas Ageis de Programação](02_Tecnologias_de_desenvolvimento/tecnicas_ageis_programacao/tecnicas_ageis.md)
+- [Técnicas Ágeis de Programação](02_Tecnologias_de_desenvolvimento/tecnicas_ageis_programacao/tecnicas_ageis.md)
+  <br>
+- [Web Services](02_Tecnologias_de_desenvolvimento/web_services/web_services.md)
+  <br>
+- [Micro-serviços](02_Tecnologias_de_desenvolvimento/microservicos/microservicos.md)
 
