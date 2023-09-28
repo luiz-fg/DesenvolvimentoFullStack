@@ -69,7 +69,7 @@ Uma das grandes desvantagens é que a dificuldade em escalar o sistema. Muito co
 
 #### Microserviços
 >"Um serviço com um único propósito e que execute bem a sua tarefa dentro de un nível de granularidade e suporte as mudanças dos sistemas que são considerados<br>
->imporatntes tanto em tempo de projeto quanto em tempo de execução.<br>
+imporatntes tanto em tempo de projeto quanto em tempo de execução.<br>
 >O foco principal é tentar construir software que pode se adaptar e isto só é possível de ser feito se as partes forem<br>
 >pequenas suficientes para se ajustar às diferenças nas mudanças de sua arquitetura."<br>
 ><i>Russ Mile</i>
@@ -326,7 +326,7 @@ Paas, é uma categoria de computação em nuvem que fornece uma plataforma e um 
 Como principais componentes do DDD, podemos listar:
 -    Linguagem onipresente
 -    Arquitetura em camadas
--    Padrões
+-    Padrões.
 
 
 ##### DDD - Camadas
@@ -360,3 +360,191 @@ Aprender o máximo possível no menor tempo possível.
 -   Delimitando fronteiras do modelo de negócio
 -   Identificando domínios de negócio
 
+#### Eventos de domínios
+Use eventos de domínio para implementar explicitamente os efeitos colaterais de alterações em seu domínio.
+Usando terminologia DDD, use eventos de domínio para implementar explicitamente efeitos colaterais entre várias agragações.
+
+Evento é algo que ocorreu no passado. Um evento de domínio é algo que ocorreu no domínio que você deseja outras partes do mesmo domínio(em processo) tenham conhecimento.
+As partes notificadas geralmente reagem de alguma forma aos eventos.
+
+Em resumo eventos de domínio ajudam você a expressar, as regras de domínio, com base na linguagem ubíqua fornecida pelos especialistas do domínio.
+É importante garantir que assim como um banco de dados, todas as operações relacionadas a um evento de domínio sejam concluídas com sucesso ou nenhuma delas seja.
+
+#### Comandos de domínios
+Nesta fase muda-se da análise do domínio para os primeiros estágios do design do sistema
+
+Até o momento, tenta-se entender como os eventos no domínio se relacionam. Para criar um sistema que implemente o processo de negócios em que você está interessado, é necessário passar à questão de como esses eventos ocorrem.
+Comandos são o mecanismo mais comum pelo qual os eventos são criados, a chave para encontrar comandos é fazer a pergunta: "Porque esse evento ocorreu ?"
+
+O objetivo é encontrar as causas pelas quais os eventos registram os efeitos.
+Os gatilhos de eventos esperados são:
+-   Um operador humano toma uma devisão e emite um comando
+-   Algum sistema ou sensor externo fonece um estímulo
+-   Um evento resulta de alguma política
+-   A conclusão de algum período determinado de tempo decorrido.
+
+#### Agregação
+Agregação é um padrão no DDD, um agregado DDD é um cluster de objetos de domínio que podem ser tratados como uma única unidade.
+Um exemplo pode ser um pedido e seus itens de linha, esses serão objetos separados, mas é útil tratar o pedido como um único agregado. Um agregado terá um de seus objetos componentes como a raiz agregada. Quaisquer referências externas ao agregado devem apenas ir para a raiz agragada.
+A raiz pode assim garantir a integridade do agregado como um todo.
+
+
+Aggregates são a parte do sistema que recebem os comandos que geram os eventos, são os objetos que armazenam os dados e são modificados pelos comandos.
+Cabe ao aplicativo, não à camada de dados, impor variáveis necessárias para o dominio. É isso que agregações destinam-se a modelar.
+
+
+#### Comunicação entre serviços
+
+-   **Sincrona**
+    -   Espera Resposta
+    -   Comunicação em "tempo real"
+    -   Balanceador de carga a nível de infraestrutura
+    -   Tratamento de erros pode ser pelo statos do http
+-   **Assíncrona**
+    -   Não espera resposta
+    -   Comunicação entre os dados pode ser "delay" entre estruturas
+    -   Balanceador de carga pode ser uma fila
+    -   Possibilidade de Service Discvery / Message broker
+    -   Tratamento de erros pode ficar no gerenciador da fila
+    -   Em caso de erros o gerenciador de mensagens pode tratar o reenvio.
+
+##### Implementações
+
+-   Sincrona
+    -   REST
+    -   SOAP
+    -   CDI
+-   Assíncrona
+    -   Mensagens
+    -   Eventos
+    -   Replicação de base
+
+
+#### Comunicação orientada a eventos
+
+**Caracteristicas**
+-   Muda de estado
+-   Dispare e esqueça
+-   Atores de eventos (consumidores x produtores)
+-   Acontecimentos no passado
+-   Estados imutáveis
+-   Diminui acoplamento entre aplicações
+-   Processos assíncronos
+-   Encaixa perfeitamente com patterns (CCQRS / DDD)
+-   Reprodução de estados
+
+**4 Temas estão sempre presentes**
+  1.    Event Notification
+  2.    Event-carried state transfer
+  3.    Event sourcing
+  4.    CQRS
+
+**Quando utilizar**
+-   Arquitetura distribuida
+-   Arquitetura de microsserviços
+-   Volumetria dos dados
+-   Responsividade
+-   Escalabilidade
+
+**Benefícios**
+-   Suporte a demanda de negócio com melhor serviço
+    -   menos espera
+    -   sem processos batch
+-   Sem integrações ponto a ponto.
+    -   dispare e esqueça
+-   Possibilita grandes performances
+    -   Uso de brokers poderosos(kafka).
+
+
+#### Comunicação assíncrona via filas
+
+##### Modelo requisição / resposta
+Conhecida também como cliente / servidor, pode ser síncrono ou assíncrono.
+O cliente envia uma requisição ao servidor que retorna uma resposta ao cliente ou ocorre um erro.
+
+##### Modelo requisição / resposta
+Existe um alto acomplamento entre cliente e servidor, ambos os serviços precisam estar responsivos no momento e uma falha no servidor gera uma falha no cliente.
+
+##### Modelo produtor / consumidor (pub / sub)
+-   Produtor pu publicador: Gera as mensagens.
+-   Consumidor ou subscritor: notificado quando há mensagens
+-   Há um desacoplamento entre o produtos e o consumidor.
+
+
+##### Fila de mensagens
+Cada mensagem produzida por um produtor é entregue a um único consumidor, é adequado para distribuir carga.
+Não havendo consumidores disponíveis ou registrados a mensagem geralmente é armazenada, quando o consumidor se tornar disponível a mensagem é entregue.
+
+##### Tópico de mensagens
+Cada mensagem produzida por um produtor é entregue a todos os consumidores registrados.
+Geralmente não há persistência das mensagens, somente consumidores registrados no momento em que a mensagem é gerada a recebem.
+
+
+##### Message broker
+-   Sistema especializado em recepção e envio de mensagens
+-   Desconhece detalhes sobre os produtores e consumidores
+-   capaz de persistir mensagens
+-   Em caso de fala capaz de entregar novamente uma mensagem
+-   Existem vários serviços de mesageria bastante conhecidos:
+    -   Kafka
+    -   ActiveMQ
+    -   RabbitMQ
+-   Em arquitetura de microserviços é essencial um message broker.
+-   Importante evitar ponto único de falha:
+    -   Um componente, caso falhe, impacta ou indisponibiliza o sistema todo
+    -   replicação / redundância
+-   Também é imporatnte lidar com problemas de escalabilidade
+    -   Monitoramento constante, pois é um compomente de sistema com basntante demanda.
+
+#### Politicas oferecidas por message brokers
+
+1.  ** no máximo uma vez - at most once delivery**
+    -   Existe apenas uma tentativa de entrega de mensagem
+    -   Em caso de erro a mensagem é perdida
+    -   Não mantem estado, sendo assim a implementação mais rápida e simples
+    -   Ideal para IOT, com sensores enviando constantemente medições.
+    -   Não deve ser usada para casos quando perdas eventuais de mensagens não são toleradas.
+    -   
+
+2.  ** ao menos uma vez - ?**
+    -   Realizada a entrega da mensagem. Em caso de limite de tempo ou erro, ela será entregue novamente.
+    -   Existe a necessidade de manter estado no componente de entrega
+    -   Pode duplicar o processamento ou resultado
+        -   É essencial que o tratamento de mensagens seja **idempotente** - não deixe o estado do sistema inconsistente se executado mais de uma vez.
+
+3.  ** exatamente uma vez - exactly once delivery**
+    -   Existe a garantia que cada mensagem seja entrega uma única vez, mesmo que hajam falhas, ou limite de tempo
+    -   É a forma mais complexa pois exige estado em ambos componentes: entrega e recepção
+    -   O componente de envio deve manter estado para retransmitir mensagens falhadas.
+    -   O compomete de recepção deve manter estado para ignorar mensagens que já tenham sido previamente enviadas.
+
+#### Serveless
+Aplicações serveless precisam de um servidor para rodar, mas elas não sabem qual servidor irá rodá-las. O conceito de serveless é geralmente associado ao Faas( function as a Service).
+O conceito pode ser considerado mais amplo pois serviços gerenciados(bases de dados, buscas, mensageria, etc...) também podem ser considerados serveless.
+
+Retiram do operador do sistema a responsabilidade de gerenciar o infraestrutura do sistema, atualizações de segurança do SO, atualização de biblitecas(software base), administração de escala ou capacidade.
+
+##### Faas - Functions as a Service
+Neste modelo funçoes são empacotadas, geralmente usando-se container(como Docker), a medida que existe demanda o ambiente aloca recursos para executar a função, quando a demanda encerra, o ambiente libera recursos.
+Adequado para funções de processamento, não para sistema de persistência de dados.
+Todos os players principais de cloud oferecem Faas mas é preciso prestar atenção ao **lock-in**.
+Ocorre se as funções forem escritas utilizando a API de um provedor especifico, o que torna a migração para outro provedor muito custosa.
+
+
+**Vantagens**
+-   Otimização de custos
+    -   Será cobrado conforme demanda.
+-   Escala flexível
+    -   A infraestrutura aloca mais recursos com o aumento da demanda e desaloca recursos desnecessários, até o ponto de não existir recurso alocado(custo zero).
+
+**Desvantagens**
+-   Aumento na complexidade da infraestrutura
+-   Difícil prever o custo final
+-   Maior dificuldade para depurar
+    -   O código de cada função é isolado em um container
+-   Com a necessidade aumenta a escala, podendo ocorrer um atraso devido tempo preciso para iniciar a função.
+    -   O tempo de "aquecimento" da função pode impactar na experiência do usuário.
+    -   Java é um notável exemplo.
+
+A arquitetura de microserviços é uma evolução da monolítica, incorpora aspectos como monunicação de rede, escalabilidade, distruição/replicação, etc...
+É UM MUNDO COMPLEXO, em constante evolução!
